@@ -51,12 +51,11 @@ class ProductServiceApplicationTests {
         String productRequestJson = objectMapper.writeValueAsString(productRequest);
 
         mockMvc.perform(MockMvcRequestBuilders.post("/api/product")
-                .contentType(MediaType.APPLICATION_JSON)
-                .content(productRequestJson))
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(productRequestJson))
                 .andExpect(status().isCreated());
 
         Assertions.assertEquals(1, productRepository.findAll().size());
-
     }
 
     private ProductRequest getProductRequest() {

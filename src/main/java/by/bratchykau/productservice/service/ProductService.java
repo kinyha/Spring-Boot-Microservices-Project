@@ -4,7 +4,6 @@ import by.bratchykau.productservice.dto.ProductRequest;
 import by.bratchykau.productservice.dto.ProductResponse;
 import by.bratchykau.productservice.model.Product;
 import by.bratchykau.productservice.repository.ProductRepository;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
